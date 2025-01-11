@@ -1,0 +1,48 @@
+:root {
+	--background-color: rgb(255, 255, 255);
+	--gray: rgb(240, 244, 248);
+	--blue: rgb(29, 53, 87);
+	--secondary-blue: rgb(69, 123, 157);
+	--light-gray: rgb(168, 218, 220);
+	--dark-gray: rgb(52, 58, 64);
+	--base-transition-duration: .3s;
+}
+
+* {
+	font-family: 'Rubik', sans-serif;
+}
+
+.special-font {
+	font-family: 'Courgette', sans-serif;
+}
+
+.gradient-text {
+	background-clip: text;
+	background: #BBD2C5;
+	background: linear-gradient(to right, #BBD2C5 0%, #536976 50%, #292E49 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;	
+	background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+}
+
+.icon {
+	transition: calc(var(--base-transition-duration) / 1.1);
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.icon:hover {
+	scale: 1.15;
+}
+
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
