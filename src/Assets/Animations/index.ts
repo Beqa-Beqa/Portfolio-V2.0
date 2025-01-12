@@ -1,0 +1,1 @@
+export {default as developerAnimation} from './developer-animation.json';

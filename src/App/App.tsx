@@ -1,6 +1,6 @@
 import './App.css';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import { Header } from '../Containers';
+import { Header, Main } from '../Containers';
 
 const App = () => {
   return (
@@ -9,8 +9,8 @@ const App = () => {
         <Header />
       </header>
 
-      <main className='p-2'>
-
+      <main>
+        <Main />
       </main>
 
       <footer className='p-2'>

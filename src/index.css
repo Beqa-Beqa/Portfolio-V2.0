@@ -8,10 +8,6 @@
 	--base-transition-duration: .3s;
 }
 
-* {
-	font-family: 'Rubik', sans-serif;
-}
-
 .special-font {
 	font-family: 'Courgette', sans-serif;
 }
@@ -23,7 +19,7 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;	
 	background-size: 500% auto;
-    animation: textShine 5s ease-in-out infinite alternate;
+    animation: textShine 2.5s ease-in-out infinite alternate;
 }
 
 .icon {
@@ -45,4 +41,13 @@
     100% {
         background-position: 100% 50%;
     }
+}
+
+.hover-pop {
+	transition: var(--base-transition-duration);
+}
+
+.hover-pop:hover {
+	scale: 1.05;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }

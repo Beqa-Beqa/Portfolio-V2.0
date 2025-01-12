@@ -8,7 +8,7 @@ export const GeneralContext = createContext<{
 
 
 const GeneralContextProvider = ({children}: {children: React.ReactNode}) => {
-    const [screenWidth, setScreenWidth] = useState(0);
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
     useEffect(() => {
         const listener = () => setScreenWidth(window.innerWidth);

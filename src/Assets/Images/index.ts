@@ -1,0 +1,1 @@
+export { default as BTULogo } from './BTULogo.jpg';
